@@ -1,0 +1,31 @@
+Cheat Sheet:
+
+Operators:
+	-d --> delete
+
+motions:
+	-$ --> End of line including the last character
+	-w --> until the start of the next word, excluding it's first character
+	-e --> to the end of the current word, INCLUDING the last character
+
+1) deleting:
+	-press x while cursor is over character
+
+2) appending:
+	-press A to jump to the end of the line and go into insert mode
+
+3) delete a whole word:
+	-dw
+
+4) delete to the end of a line:
+	-d$
+
+5) delete multiple words:
+	-dNUMw where NUM is the number of words to delete
+
+6) delete a whole line 
+	-type dd to delete the whole line
+
+7) the undo  command:
+	-u to undo last command, U to fix a whole line
+	-CTRL-R to redo what was undone
