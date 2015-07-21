@@ -44,3 +44,9 @@ motions:
 11) go to line
 	-number followed by G
 
+
+Note on recording:
+-press q <letter>
+-it records everything typed until q is pressed again
+-then, if I press @<letter>, it will execute those things typed
+-I can then do something like 98@a and vim will do something I recorded like 98 times
