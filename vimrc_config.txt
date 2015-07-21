@@ -1,0 +1,6 @@
+This contains input for the command-line when configuring vim with my vimrc file on a new computer
+
+# first, my dotfiles repo needs to be downloaded to ~/code on whatever computer I'm using
+
+# Create the symlink to the existing vimrc file
+$ ln -s ~/code/dotfiles/vimrc ~/.vimrc
