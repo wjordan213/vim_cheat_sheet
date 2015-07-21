@@ -1,13 +1,12 @@
 Cheat Sheet:
 
 Operators:
-	-d --> delete
+        -d --> delete
 
 motions:
 	-$ --> End of line including the last character
 	-w --> until the start of the next word, excluding it's first character
 	-e --> to the end of the current word, INCLUDING the last character
-
 1) deleting:
 	-press x while cursor is over character
 
@@ -23,9 +22,25 @@ motions:
 5) delete multiple words:
 	-dNUMw where NUM is the number of words to delete
 
-6) delete a whole line 
+6) delete a whole line
 	-type dd to delete the whole line
 
 7) the undo  command:
 	-u to undo last command, U to fix a whole line
 	-CTRL-R to redo what was undone
+
+8) Find things:
+	-f to find first occurence of next typed character with cursor hovered over that character
+	-t to do the same thing but with cursor hovered before that character
+	-capital t and f to do the same thing backwards
+
+9) High, Middle, Low
+	-H, M, and L bring the cursor to the bottom, top, and middle of the file
+
+10) Search
+	-/ followed by what should be searched, then enter
+	-jumps to beginning of that string, n to go forward, N to go back
+
+11) go to line
+	-number followed by G
+
