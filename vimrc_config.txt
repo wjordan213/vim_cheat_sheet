@@ -4,3 +4,6 @@ This contains input for the command-line when configuring vim with my vimrc file
 
 # Create the symlink to the existing vimrc file
 $ ln -s ~/code/dotfiles/vimrc ~/.vimrc
+
+Things to implement on future vimrc:
+	-command line pane
