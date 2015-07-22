@@ -52,6 +52,10 @@ motions:
 13) switch back and forth between command line:
 	-CTRL-Z to pause vim and go to shell
 	-fg [Enter] to go back to vim
+
+14) break line and go into insert mode
+	-o breaks the line below and positions the cursor there
+	-O breaks the line above and the cursor does not move
 Note on recording:
 -press q <letter>
 -it records everything typed until q is pressed again
