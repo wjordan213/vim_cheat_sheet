@@ -44,6 +44,9 @@ motions:
 11) go to line
 	-number followed by G
 
+12) split pane to another specified file
+        -:vsp followed by file path
+        -:q to get rid of a pane
 
 Note on recording:
 -press q <letter>
