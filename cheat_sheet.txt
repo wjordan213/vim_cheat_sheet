@@ -47,7 +47,11 @@ motions:
 12) split pane to another specified file
         -:vsp followed by file path
         -:q to get rid of a pane
+	-CTRL-ww in order to switch panes
 
+13) switch back and forth between command line:
+	-CTRL-Z to pause vim and go to shell
+	-fg [Enter] to go back to vim
 Note on recording:
 -press q <letter>
 -it records everything typed until q is pressed again
