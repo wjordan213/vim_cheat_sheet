@@ -7,35 +7,20 @@ motions:
 	-$ --> End of line including the last character
 	-w --> until the start of the next word, excluding it's first character
 	-e --> to the end of the current word, INCLUDING the last character
-1) deleting:
-	-press x while cursor is over character
-
-2) appending:
-	-press A to jump to the end of the line and go into insert mode
-
-3) delete a whole word:
-	-dw
 
 4) delete to the end of a line:
 	-d$
 
-5) delete multiple words:
-	-dNUMw where NUM is the number of words to delete
+5) press . to repeat the change last made
+	-helpful for making the same change to multiple files
 
 6) delete a whole line
 	-type dd to delete the whole line
-
-7) the undo  command:
-	-u to undo last command, U to fix a whole line
-	-CTRL-R to redo what was undone
 
 8) Find things:
 	-f to find first occurence of next typed character with cursor hovered over that character
 	-t to do the same thing but with cursor hovered before that character
 	-capital t and f to do the same thing backwards
-
-9) High, Middle, Low
-	-H, M, and L bring the cursor to the bottom, top, and middle of the file
 
 10) Search
 	-/ followed by what should be searched, then enter
@@ -45,17 +30,32 @@ motions:
 	-number followed by G
 
 12) split pane to another specified file
-        -:vsp followed by file path
-        -:q to get rid of a pane
-	-CTRL-ww in order to switch panes
+	-:split or :vsplit followed by the file name
+	-:split is vertical while :vsplit is horizantle
 
-13) switch back and forth between command line:
-	-CTRL-Z to pause vim and go to shell
-	-fg [Enter] to go back to vim
+-moving between panes
+	-CTRL-W followed by hjkl for moving right/left/up/down
+	-CTRL-W followed by HJKL for moving the panes themselves
 
-14) break line and go into insert mode
-	-o breaks the line below and positions the cursor there
-	-O breaks the line above and the cursor does not move
+-Increasing or decreasing pane size
+	-CTRL-W followed by +- for increasing or decreasing window height
+	-CTRL-W followed by <> for increasing or decreasing window width
+	-CTRL-W followed by = for equalizing the size of all my panes
+
+-"centering" line at different parts of the screen
+	-zt to move to the top
+	-zz to move to the middle
+	-bring current line to the bottom of the window
+
+-tabbing
+	-:tabnew creates a new tab
+	-:tabe allows you to specify a file
+	-gt allows going one tab to the right
+	-gT allows going one tab to the left
+-break a window out to a new tab
+	-CTRL-W followed by T breaks out the current window the cursor is on to a new tab
+
+
 Note on recording:
 -press q <letter>
 -it records everything typed until q is pressed again
