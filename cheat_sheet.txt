@@ -17,10 +17,16 @@ motions:
 6) delete a whole line
 	-type dd to delete the whole line
 
+7) replacing stuff
+	-type c followed by direction, like w, j, k,l, h, or e
+	-numbers apply as well
+	-C to replace the line the cursor is on
+
 8) Find things:
 	-f to find first occurence of next typed character with cursor hovered over that character
 	-t to do the same thing but with cursor hovered before that character
 	-capital t and f to do the same thing backwards
+	-, and ; repeate last f, t, F, or T command in either direction
 
 10) Search
 	-/ followed by what should be searched, then enter
@@ -28,6 +34,8 @@ motions:
 
 11) go to line
 	-number followed by G
+
+-CTRL-U or CTRL-D move the cursor by a half of a screen
 
 12) split pane to another specified file
 	-:split or :vsplit followed by the file name
