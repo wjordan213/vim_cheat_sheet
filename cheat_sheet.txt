@@ -45,6 +45,9 @@ motions:
 	-CTRL-W followed by hjkl for moving right/left/up/down
 	-CTRL-W followed by HJKL for moving the panes themselves
 
+-"rotating panes"
+  -CTRL-W followed by r for rotating all the panes on the same row
+
 -Increasing or decreasing pane size
 	-CTRL-W followed by +- for increasing or decreasing window height
 	-CTRL-W followed by <> for increasing or decreasing window width
