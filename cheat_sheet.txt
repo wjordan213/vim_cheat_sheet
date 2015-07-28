@@ -1,21 +1,38 @@
 Cheat Sheet:
 
+text objects:
+-ip (inner paragraph)
+-aw (word)
+-iw (inner word)
+-i) (inner ())
+-i" (inner "")
+-i followed by ", ), ], }, >, t (tag for html), all those container type things
+  -for tags it is very flexible about where the cursor is on the line
+-t(symbol), to symbol
+-is, as --> (inner sentence, a sentence)
+
 Operators:
-        -d --> delete
+  -d --> delete
+  -> --> tab up
+  -< --> tab down
+  -= equalize tab
+  -c change
+  -n next in search
+
 
 motions:
 	-$ --> End of line including the last character
 	-w --> until the start of the next word, excluding it's first character
 	-e --> to the end of the current word, INCLUDING the last character
-
+  -t or f --> followed by a letter, goes up to that letter (t exclusive, f inclusive)
+  -o is kind of a motion, it goes right into insert mode
+    -with a count it then jumps a line and goes back into insert mode after exiting insert mode
+    
 4) delete to the end of a line:
 	-d$
 
 5) press . to repeat the change last made
 	-helpful for making the same change to multiple files
-
-6) delete a whole line
-	-type dd to delete the whole line
 
 7) replacing stuff
 	-type c followed by direction, like w, j, k,l, h, or e
@@ -37,26 +54,10 @@ motions:
 
 -CTRL-U or CTRL-D move the cursor by a half of a screen
 
-12) split pane to another specified file
-	-:split or :vsplit followed by the file name
-	-:split is vertical while :vsplit is horizantle
-
--moving between panes
-	-CTRL-W followed by hjkl for moving right/left/up/down
-	-CTRL-W followed by HJKL for moving the panes themselves
-
--"rotating panes"
-  -CTRL-W followed by r for rotating all the panes on the same row
-
 -Increasing or decreasing pane size
 	-CTRL-W followed by +- for increasing or decreasing window height
 	-CTRL-W followed by <> for increasing or decreasing window width
 	-CTRL-W followed by = for equalizing the size of all my panes
-
--"centering" line at different parts of the screen
-	-zt to move to the top
-	-zz to move to the middle
-	-bring current line to the bottom of the window
 
 -tabbing
 	-:tabnew creates a new tab
@@ -75,3 +76,37 @@ Note on recording:
 
 Note on future plugins:
 -look into fuzzy finding
+
+
+
+
+Commands:
+-Vim acts on "sentences"
+  -"d" is the verb, $ is the noun or something like that
+  -repeating the verb acts on the whole line, like "dd" or "cc"
+- indenting is done with <<, >>, or ==, where == indents the line to match the above indentation 
+- motions can be combined with verbs to do something
+  - "dtf" would delete everything up to but not including f
+    -d is the verb
+    -tf is the motion
+
+Text Objects:
+-do something "within the context of a motion"
+-do what just motions and verbs cannot do
+-if cursor is on the middle of word for instance
+  -"daw" (delete all word) will delete the word the cursor is on and take out the whitespace ahead of the word
+  -"ciw" (change inner word) will delete the word object and place vim in insert mode
+  -a paragragph is a sequence of lines not separated by newlines
+  -vim has text object meant to operate on those paragraphs
+  -"dip" (delete inner paragraph) will delete a whole paragraph object
+-verbs can be used on these text objects then basically
+
+
+ex:
+  <hello>this is better</hello>
+  "hasldkjfalskdjf"
+
+the . command
+  -repeat the previous change.
+  -the . is more useful if text objects are frequently used
+
