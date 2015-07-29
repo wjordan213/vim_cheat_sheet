@@ -28,6 +28,12 @@ motions:
   -o is kind of a motion, it goes right into insert mode
     -with a count it then jumps a line and goes back into insert mode after exiting insert mode
     
+Misc commands:
+  -s -> deletes the character underneath the cursor and places vim in insert mode
+  -o -> breakline and insert mode
+  -I -> (capital) moves to beginning of line and puts in insert mode
+  -cc -> not only does it go to replace the whole line, but it also tabs it properly
+
 4) delete to the end of a line:
 	-d$
 
