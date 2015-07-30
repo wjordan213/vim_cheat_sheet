@@ -3,7 +3,11 @@ This contains input for the command-line when configuring vim with my vimrc file
 # first, my dotfiles repo needs to be downloaded to ~/code on whatever computer I'm using
 
 # Create the symlink to the existing vimrc file
-$ ln -s ~/code/dotfiles/vimrc ~/.vimrc
+ln -s ~/code/dotfiles/vimrc ~/.vimrc
+
+# put this in ~/.inputrc to allow for vim command line normal mode
+set editing-mode vi
+set keymap vi-command
 
 Things to implement on future vimrc:
 	-command line pane

@@ -21,6 +21,7 @@ Operators:
 
 
 motions:
+  -'' --> previous cursor position
 	-$ --> End of line including the last character
 	-w --> until the start of the next word, excluding it's first character
 	-e --> to the end of the current word, INCLUDING the last character
