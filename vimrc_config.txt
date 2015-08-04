@@ -9,5 +9,10 @@ ln -s ~/code/dotfiles/vimrc ~/.vimrc
 set editing-mode vi
 set keymap vi-command
 
+throw these two lines on the command line whenever on a new comp. a few base configurations that are nice
+
+-mkdir -p ~/.vim/plugin
+-curl https://raw.githubusercontent.com/tpope/vim-sensible/master/plugin/sensible.vim > ~/.vim/plugin/sensible.vim
+
 Things to implement on future vimrc:
 	-command line pane
