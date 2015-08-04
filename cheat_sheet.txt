@@ -74,6 +74,10 @@ Misc commands:
 -break a window out to a new tab
 	-CTRL-W followed by T breaks out the current window the cursor is on to a new tab
 
+-open file under cursor
+  -gf opens it in same window
+  -<c-w>f opens it in new window
+  -<c-w>gf opens it in new tab
 
 Note on recording:
 -press q <letter>
