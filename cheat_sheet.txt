@@ -1,28 +1,23 @@
 Cheat Sheet:
 
+Ctrl-P:
+-Fuzzy finding
+-<C-k>, <C-j>: Move up or down in the CtrlP results list
+-<C-p>, <C-n>: Cycle through previous CtrlP searches, <C-n> goes forward
+-<C-t> Open the highlighted file in a new tab
+-<C-s>: Open the highligted file in a new split
+-<C-v>: Open the highlighted file in a new vertical split
+
 text objects:
--ip (inner paragraph)
--aw (word)
--iw (inner word)
--i) (inner ())
--i" (inner "")
 -i followed by ", ), ], }, >, t (tag for html), all those container type things
   -for tags it is very flexible about where the cursor is on the line
--t(symbol), to symbol
 -is, as --> (inner sentence, a sentence)
 
 Operators:
-  -d --> delete
-  -> --> tab up
-  -< --> tab down
-  -= equalize tab
-  -c change
   -n next in search
-
 
 motions:
   -'' --> previous cursor position
-	-$ --> End of line including the last character
 	-w --> until the start of the next word, excluding it's first character
 	-e --> to the end of the current word, INCLUDING the last character
   -t or f --> followed by a letter, goes up to that letter (t exclusive, f inclusive)
