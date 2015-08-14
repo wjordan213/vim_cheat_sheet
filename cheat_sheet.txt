@@ -5,7 +5,7 @@ Ctrl-P:
 -<C-k>, <C-j>: Move up or down in the CtrlP results list
 -<C-p>, <C-n>: Cycle through previous CtrlP searches, <C-n> goes forward
 -<C-t> Open the highlighted file in a new tab
--<C-s>: Open the highligted file in a new split
+-<C-x>: Open the highligted file in a new split
 -<C-v>: Open the highlighted file in a new vertical split
 
 text objects:
@@ -17,6 +17,9 @@ Operators:
   -n next in search
 
 motions:
+  -() --> sentence forward or backword
+  -{} --> paragraph forward or backwords
+  -* --> next occurence of the word on the file
   -'' --> previous cursor position
 	-w --> until the start of the next word, excluding it's first character
 	-e --> to the end of the current word, INCLUDING the last character
@@ -26,7 +29,8 @@ motions:
     
 Misc commands:
   -s -> deletes the character underneath the cursor and places vim in insert mode
-  -o -> breakline and insert mode
+  -:wa -> saves all files
+    -:qa -> quits all files
   -I -> (capital) moves to beginning of line and puts in insert mode
   -cc -> not only does it go to replace the whole line, but it also tabs it properly
 
